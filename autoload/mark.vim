@@ -889,7 +889,6 @@ function! s:SavePattern( ... )
 	let l:savedMarks = mark#ToList()
 
 	let l:marksVariable = call('s:GetMarksVariable', a:000)
-	call ingo#plugin#persistence#Store(l:marksVariable, l:savedMarks)
 	if ! a:0
 		let g:MARK_ENABLED = s:enabled
 	endif
